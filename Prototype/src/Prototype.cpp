@@ -14,7 +14,7 @@ class Item{
 public:
 	Item(){;};
 	Item(int x):elem(x){};
-	int setelem(int x){elem = x;};
+	void setelem(int x){elem = x;};
 	int getelem(){return elem;};
 };
 
