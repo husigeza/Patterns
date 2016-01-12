@@ -97,7 +97,7 @@ class FactoryCreator1 : AbstractFactory {
 
 public:
 	Human* CreateEntity() override{
-		Human *h = new Human("Balazs", "FING");
+		Human *h = new Human("Balazs", "Fly");
 		return h;
 	}
 
@@ -136,15 +136,15 @@ int main() {
 
 
 	cout << "Creator1: " << endl;
-	cout << "Entity name: "<< a1->getname() << endl;
+	cout << "Human name: "<< a1->getname() << endl;
 	cout << "Human special ability: "<< a1->getspecial_ability() << endl;
-	cout << "Shape area: " << s1->getarea() << endl;
+	cout << "Polygon area: " << s1->getarea() << endl;
 	cout << "Polygon color: " << s1->getcolor() << endl << endl;
 
 	cout << "Creator2: " << endl;
-	cout << "Entity name: "<< a2->getname() << endl;
+	cout << "Animal name: "<< a2->getname() << endl;
 	cout << "Animal legs: "<< a2->getlegs() << endl;
-	cout << "Shape area: " << s2->getarea() << endl;
+	cout << "Line area: " << s2->getarea() << endl;
 	cout << "Line length " << s2->getlength() << endl;
 
 	return 0;
