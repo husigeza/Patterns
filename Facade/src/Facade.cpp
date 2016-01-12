@@ -24,7 +24,7 @@ class Facade : public Class{
 public:
 	Facade(){;};
 
-	void function_debug(int x){
+	void function_wrapper(int x){
 		cout<< "Before calling function" << endl;
 		int y = 10;
 		this->function(x,y);
@@ -37,7 +37,7 @@ int main() {
 
 	Facade *f = new Facade();
 
-	f->function_debug(5);
+	f->function_wrapper(5);
 
 	return 0;
 }
